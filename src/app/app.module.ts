@@ -1,5 +1,7 @@
+import { QuoteService } from './quote.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpModule } from "@angular/http";
 
 import { AppComponent } from './app.component';
 import { QuoteComponent } from './quote/quote.component';
@@ -16,9 +18,10 @@ import { routing } from './app.routing';
   ],
   imports: [
     BrowserModule,
-    routing
+    routing,
+    HttpModule
   ],
-  providers: [],
+  providers: [QuoteService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

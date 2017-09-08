@@ -55,7 +55,7 @@
     "component": {},
     "serve": {
         "port": 4200,
-        "host": "192.168.10.10"
+        "host": "laravel-ng2-vue.app"
     }
   }
 }
